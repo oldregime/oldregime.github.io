@@ -12,7 +12,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <header className="mb-12">
           <h1 className="text-2xl mb-4">
             <Link to="/" className="hover:text-primary">
-              divyansh.dev/
+              theoldregime.social/
             </Link>
           </h1>
           

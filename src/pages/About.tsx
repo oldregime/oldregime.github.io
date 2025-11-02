@@ -1,3 +1,5 @@
+import profileImage from "@/assets/profile-ascii.jpg";
+
 const About = () => {
   const skills = {
     "Languages": ["Java", "Python (Pandas, Matplotlib)", "JavaScript", "MERN Stack"],
@@ -26,7 +28,16 @@ const About = () => {
   return (
     <div className="space-y-12">
       <section>
-        <h1 className="text-2xl mb-4 text-terminal-cyan">About Me</h1>
+        <div className="flex flex-col items-center mb-8">
+          <div className="w-48 h-48 rounded-full overflow-hidden border-2 border-primary mb-4">
+            <img 
+              src={profileImage} 
+              alt="Divyansh Joshi ASCII Profile" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h1 className="text-2xl text-terminal-cyan">About Me</h1>
+        </div>
         <div className="space-y-4 text-muted-foreground">
           <p>
             I'm Divyansh Joshi, a Computer Science Engineering student at VIT Bhopal 
