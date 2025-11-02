@@ -5,12 +5,14 @@ const Home = () => {
       title: "GradeWise - AI Powered Grading Tool",
       description: "Developed a full-stack web application to automate student paper grading using AI, significantly reducing grading time for educators.",
       tags: ["Next.js", "React", "AI", "GCP"],
+      link: "https://github.com/oldregime/VitGrader",
     },
     {
       date: "2025",
       title: "File Management System Architecture",
       description: "Designed comprehensive digital organization framework using hierarchical folder structure with Scientific methodology for enhanced productivity.",
       tags: ["Architecture", "System Design"],
+      link: "https://github.com/oldregime/FileStructureUbuntu",
     },
     {
       date: "2024",
@@ -23,6 +25,7 @@ const Home = () => {
       title: "NAS Server Development",
       description: "Deployed NAS server using Proxmox with RAID storage and mechanized backup, ensuring 99.9% data availability.",
       tags: ["DevOps", "Infrastructure"],
+      link: "https://github.com/oldregime/NAS-Server-Development-2024",
     },
   ];
 
@@ -44,9 +47,20 @@ const Home = () => {
                 {project.date}
               </time>
               <h3 className="text-lg mb-2">
-                <span className="text-primary group-hover:underline cursor-pointer">
-                  {project.title}
-                </span>
+                {project.link ? (
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary group-hover:underline cursor-pointer"
+                  >
+                    {project.title}
+                  </a>
+                ) : (
+                  <span className="text-primary">
+                    {project.title}
+                  </span>
+                )}
               </h3>
               <p className="text-muted-foreground mb-3 leading-relaxed">
                 {project.description}
