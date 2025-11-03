@@ -1,6 +1,18 @@
 const Projects = () => {
   const projects = [
     {
+      title: "Personal Finance Tracker (MERN Stack)",
+      period: "2024-2025",
+      tech: "MongoDB, Express.js, React, Node.js, JWT, OAuth",
+      description: [
+        "Built a comprehensive personal finance management application with the MERN stack featuring secure user authentication with JWT and OAuth (Google, Facebook).",
+        "Implemented expense tracking, income management, and budget planning features with category-wise organization and monthly budget monitoring.",
+        "Designed interactive data visualization with charts and reports to analyze spending habits and financial progress across devices.",
+        "Deployed full-stack application with MongoDB database, Express.js backend API, and React frontend on Vercel.",
+      ],
+      link: "https://merntracker.vercel.app/",
+    },
+    {
       title: "GradeWise - AI Powered Grading Tool",
       period: "2024-2025",
       tech: "Next.js, React, Tailwind CSS, Genkit, Google Cloud Platform",
@@ -9,6 +21,7 @@ const Projects = () => {
         "Implemented AI flows for extracting questions, generating feedback, and scoring similarity, leveraging Genkit and Google Cloud Platform for scalability and reliability.",
         "Designed a user-friendly interface with Next.js and Tailwind CSS, providing a seamless experience for teachers to upload papers, review grades, and provide final feedback.",
       ],
+      link: "https://github.com/oldregime/VitGrader",
     },
     {
       title: "File Management System Architecture",
@@ -20,6 +33,7 @@ const Projects = () => {
         "Established automated categorization system reducing file retrieval time by 60% through structured libraries and development tools organization.",
         "Created scalable template library with version control integration supporting collaborative development workflows.",
       ],
+      link: "https://github.com/oldregime/FileStructureUbuntu",
     },
     {
       title: "Fraudulent App Detection Using NLP",
@@ -39,6 +53,7 @@ const Projects = () => {
         "Deployed SSH tunnel for secure remote access with encryption mechanisms, for 15+ primary users.",
         "Optimized performance through RAID configuration and monitoring tools, achieving approximately 20% faster file transfer speeds for large datasets.",
       ],
+      link: "https://github.com/oldregime/NAS-Server-Development-2024",
     },
     {
       title: "Web Development Projects",
@@ -67,7 +82,20 @@ const Projects = () => {
         {projects.map((project, index) => (
           <article key={index} className="border-l-2 border-primary pl-6">
             <div className="mb-4">
-              <h2 className="text-xl mb-2">{project.title}</h2>
+              <h2 className="text-xl mb-2">
+                {project.link ? (
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:underline hover:text-terminal-cyan transition-colors"
+                  >
+                    {project.title}
+                  </a>
+                ) : (
+                  project.title
+                )}
+              </h2>
               <div className="flex gap-4 text-sm">
                 <span className="text-terminal-yellow">{project.period}</span>
                 <span className="text-muted-foreground">{project.tech}</span>
