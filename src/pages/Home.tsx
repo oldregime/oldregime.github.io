@@ -2,6 +2,13 @@ const Home = () => {
   const projects = [
     {
       date: "2024-2025",
+      title: "Personal Finance Tracker (MERN Stack)",
+      description: "A comprehensive personal finance management application built with the MERN stack. Track expenses, manage income, set budgets, and visualize financial progress with interactive charts and reports.",
+      tags: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
+      link: "https://merntracker.vercel.app/",
+    },
+    {
+      date: "2024-2025",
       title: "GradeWise - AI Powered Grading Tool",
       description: "Developed a full-stack web application to automate student paper grading using AI, significantly reducing grading time for educators.",
       tags: ["Next.js", "React", "AI", "GCP"],
