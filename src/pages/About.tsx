@@ -2,9 +2,11 @@ import profileImage from "@/assets/profile-ascii.jpg";
 
 const About = () => {
   const skills = {
-    "Languages": ["Java", "Python (Pandas, Matplotlib)", "JavaScript", "MERN Stack"],
+    "Languages & Frameworks": ["Java", "Python (Pandas, Matplotlib)", "JavaScript", "TypeScript", "MERN Stack", "React.js", "Next.js", "Node.js", "Express.js"],
+    "DevOps & Infrastructure": ["Docker", "Firebase", "AWS", "CloudFlare", "Git", "Linux", "Bash/Shell Scripting", "RAID Configuration", "Backup & Recovery Systems"],
+    "Monitoring & Observability": ["LGTM Stack (Loki, Grafana, Tempo, Mimir)", "Prometheus", "Grafana Alloy", "System Monitoring"],
     "Testing & Automation": ["Selenium WebDriver", "LambdaTest", "Jenkins"],
-    "Cloud & DevOps": ["Firebase", "AWS", "Docker", "Git", "CloudFlare"],
+    "AI/ML & Data Science": ["Machine Learning", "NLP", "Genkit (Google AI)", "Data Preprocessing"],
     "Databases": ["MySQL", "MongoDB", "Supabase"],
   };
 
@@ -14,7 +16,6 @@ const About = () => {
       institution: "Vellore Institute of Technology",
       location: "Bhopal",
       year: "Expected 2026",
-      grade: "8.18 CGPA",
     },
     {
       degree: "Class XII, CBSE",

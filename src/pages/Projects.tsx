@@ -1,6 +1,18 @@
 const Projects = () => {
   const projects = [
     {
+      title: "Bitcoin Signet Monitoring Stack",
+      period: "2024-2025",
+      tech: "LGTM Stack (Loki, Grafana, Tempo, Mimir), Docker, Ansible, Bitcoin Core",
+      description: [
+        "Built a production-ready monitoring solution for Bitcoin Signet nodes using Grafana Alloy, Loki, and Grafana with automated deployment and professional-grade monitoring capabilities.",
+        "Implemented real-time log collection, centralized storage, and advanced visualization with 7 critical alert rules for node health, chain reorganization, and performance monitoring.",
+        "Automated infrastructure deployment using Docker Compose and Ansible with comprehensive documentation and troubleshooting guides.",
+        "Achieved <1 second log processing latency and <30 second alert response time with 99.9% uptime monitoring for blockchain operations.",
+      ],
+      link: "https://github.com/oldregime/luganode2025",
+    },
+    {
       title: "Personal Finance Tracker (MERN Stack)",
       period: "2024-2025",
       tech: "MongoDB, Express.js, React, Node.js, JWT, OAuth",
