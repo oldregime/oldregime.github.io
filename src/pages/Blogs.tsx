@@ -1,0 +1,71 @@
+const Blogs = () => {
+  const blogs = [
+    {
+      title: "A Desi Guide to Inflation: Why Your Piggy Bank Isn't Getting Any Fatter",
+      date: "Dec 31, 2024",
+      platform: "Medium",
+      description: "Explore the fun side of inflation with me. From samosas to chai, understand economic factors through relatable, humorous examples. Get tips on surviving the inflation game with a desi twist!",
+      link: "https://medium.com/@theoldregime/why-your-piggy-bank-isnt-getting-any-fatter-a-desi-guide-to-inflation-c3df07c9a3e6",
+    },
+  ];
+
+  return (
+    <div className="space-y-12">
+      <section>
+        <h1 className="text-2xl mb-4 text-terminal-cyan">Blogs</h1>
+        <p className="text-muted-foreground mb-8">
+          My thoughts on technology, economics, and everything in between.
+        </p>
+      </section>
+
+      <section className="space-y-8">
+        {blogs.map((blog, index) => (
+          <article key={index} className="group border-l-2 border-primary pl-6">
+            <time className="text-sm text-muted-foreground block mb-2">
+              {blog.date} · {blog.platform}
+            </time>
+            <h2 className="text-xl mb-3">
+              <a
+                href={blog.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline cursor-pointer"
+              >
+                {blog.title}
+              </a>
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              {blog.description}
+            </p>
+            <a
+              href={blog.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-terminal-yellow hover:text-primary text-sm inline-flex items-center gap-1"
+            >
+              Read on {blog.platform}
+              <span>→</span>
+            </a>
+          </article>
+        ))}
+      </section>
+
+      <section className="mt-12 p-6 bg-secondary/30 border border-border rounded">
+        <p className="text-muted-foreground text-sm">
+          More articles coming soon! Follow me on{" "}
+          <a
+            href="https://medium.com/@theoldregime"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-terminal-yellow hover:underline"
+          >
+            Medium
+          </a>{" "}
+          to stay updated.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default Blogs;

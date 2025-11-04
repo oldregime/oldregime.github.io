@@ -32,6 +32,13 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             </Link>
             <span className="text-muted-foreground">/</span>
             <Link 
+              to="/blogs" 
+              className={isActive("/blogs") ? "text-primary" : "text-foreground hover:text-primary"}
+            >
+              Blogs
+            </Link>
+            <span className="text-muted-foreground">/</span>
+            <Link 
               to="/about" 
               className={isActive("/about") ? "text-primary" : "text-foreground hover:text-primary"}
             >
