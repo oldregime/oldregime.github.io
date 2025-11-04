@@ -39,6 +39,14 @@ const Home = () => {
   return (
     <div className="space-y-12">
       <section>
+        <div className="mb-6 font-mono text-sm">
+          <span className="text-terminal-green">divyansh@portfolio</span>
+          <span className="text-muted-foreground">:</span>
+          <span className="text-terminal-cyan">~</span>
+          <span className="text-muted-foreground">$ </span>
+          <span className="text-foreground">pwd</span>
+          <div className="text-terminal-yellow">/home/divyansh/portfolio</div>
+        </div>
         <p className="text-muted-foreground mb-8">
           Computer Science student at VIT Bhopal. Interested in full-stack development, 
           machine learning, and system architecture.

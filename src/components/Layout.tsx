@@ -15,6 +15,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               theoldregime.social/
             </Link>
           </h1>
+
+          <div className="mb-4 font-mono text-xs text-terminal-green">
+            <span className="text-muted-foreground">$ </span>
+            <span className="text-foreground">uptime</span>
+            <div className="text-terminal-yellow ml-2">
+              coding for 8 years (since class 9th) • current session: building the future
+            </div>
+          </div>
           
           <nav className="flex gap-1 text-sm mb-6">
             <Link 

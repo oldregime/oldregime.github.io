@@ -35,9 +35,24 @@ const Contact = () => {
         </p>
       </section>
 
+      <section className="mb-8">
+        <div className="font-mono text-sm bg-secondary/30 p-4 rounded border border-border">
+          <span className="text-terminal-green">divyansh@portfolio</span>
+          <span className="text-muted-foreground">:</span>
+          <span className="text-terminal-cyan">~</span>
+          <span className="text-muted-foreground">$ </span>
+          <span className="text-foreground">ssh divyansh@contact.me</span>
+          <div className="mt-2 text-terminal-yellow">
+            Connecting to divyansh@contact.me...
+          </div>
+          <div className="text-terminal-green">
+            Connection established ✓
+          </div>
+        </div>
+      </section>
+
       <section>
-        <div className="space-y-6">
-          {contacts.map((contact, index) => (
+        <div className="space-y-6">{contacts.map((contact, index) => (
             <div key={index} className="flex flex-col sm:flex-row sm:items-center gap-2">
               <span className="text-muted-foreground min-w-[100px]">
                 {contact.label}:
