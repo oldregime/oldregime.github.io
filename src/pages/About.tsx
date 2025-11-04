@@ -2,11 +2,10 @@ import profileImage from "@/assets/profile-ascii.jpg";
 
 const About = () => {
   const skills = {
-    "Languages & Frameworks": ["Java", "Python (Pandas, Matplotlib)", "JavaScript", "TypeScript", "MERN Stack", "React.js", "Next.js", "Node.js", "Express.js"],
+    "Languages & Frameworks": ["Java", "Python", "JavaScript", "TypeScript", "MERN Stack"],
     "DevOps & Infrastructure": ["Docker", "Firebase", "AWS", "CloudFlare", "Git", "Linux", "Bash/Shell Scripting", "RAID Configuration", "Backup & Recovery Systems"],
     "Monitoring & Observability": ["LGTM Stack (Loki, Grafana, Tempo, Mimir)", "Prometheus", "Grafana Alloy", "System Monitoring"],
     "Testing & Automation": ["Selenium WebDriver", "LambdaTest", "Jenkins"],
-    "AI/ML & Data Science": ["Machine Learning", "NLP", "Genkit (Google AI)", "Data Preprocessing"],
     "Databases": ["MySQL", "MongoDB", "Supabase"],
   };
 

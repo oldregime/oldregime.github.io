@@ -2,13 +2,6 @@ const Home = () => {
   const projects = [
     {
       date: "2024-2025",
-      title: "Bitcoin Signet Monitoring Stack",
-      description: "Production-ready monitoring solution for Bitcoin Signet nodes using LGTM Stack (Loki, Grafana, Tempo, Mimir) with automated deployment, real-time alerting, and <1s log processing latency.",
-      tags: ["LGTM Stack", "Docker", "Ansible", "Bitcoin", "DevOps"],
-      link: "https://github.com/oldregime/luganode2025",
-    },
-    {
-      date: "2024-2025",
       title: "Personal Finance Tracker (MERN Stack)",
       description: "A comprehensive personal finance management application built with the MERN stack. Track expenses, manage income, set budgets, and visualize financial progress with interactive charts and reports.",
       tags: ["MongoDB", "Express.js", "React", "Node.js", "JWT"],
@@ -28,12 +21,7 @@ const Home = () => {
       tags: ["Architecture", "System Design"],
       link: "https://github.com/oldregime/FileStructureUbuntu",
     },
-    {
-      date: "2024",
-      title: "Fraudulent App Detection Using NLP",
-      description: "Developed a machine learning model achieving 85% accuracy in detecting fraudulent apps based on a dataset of over 1,000 user reviews.",
-      tags: ["Machine Learning", "NLP", "Python"],
-    },
+
     {
       date: "2024",
       title: "NAS Server Development",
