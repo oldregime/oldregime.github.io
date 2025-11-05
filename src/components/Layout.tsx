@@ -70,6 +70,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             >
               LinkedIn
             </a>
+            <Link 
+              to="/resume"
+              className="text-terminal-yellow hover:text-primary"
+            >
+              CV
+            </Link>
           </div>
         </header>
 

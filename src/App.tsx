@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Blogs from "./pages/Blogs";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import AIRevolution from "./pages/blog/AIRevolution";
 import InflationGuide from "./pages/blog/InflationGuide";
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/blog/ai-revolution" element={<AIRevolution />} />
             <Route path="/blog/inflation-guide" element={<InflationGuide />} />
             <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
