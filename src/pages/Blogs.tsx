@@ -1,6 +1,13 @@
 const Blogs = () => {
   const blogs = [
     {
+      title: "The Day Software Became the Boss: A Real Story from India's Tech Revolution",
+      date: "Jul 3, 2025",
+      platform: "Medium",
+      description: "When people think of AI in India, they imagine airports and startups. But the real revolution might begin behind a busy dosa counter. Exploring how AI is quietly transforming India's informal economy — from cafés to kiranas to rural healthcare.",
+      link: "https://theoldregime.medium.com/the-day-software-became-the-boss-a-real-story-from-indias-tech-revolution-24c13240e7a2",
+    },
+    {
       title: "A Desi Guide to Inflation: Why Your Piggy Bank Isn't Getting Any Fatter",
       date: "Dec 31, 2024",
       platform: "Medium",
