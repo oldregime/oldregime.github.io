@@ -1,6 +1,22 @@
 const Resume = () => {
   return (
     <div className="max-w-4xl mx-auto space-y-8">
+      {/* Download Button */}
+      <div className="flex justify-end mb-4">
+        <a
+          href="/resume.pdf"
+          download="Divyansh_Joshi_Resume.pdf"
+          className="text-sm px-4 py-2 border border-terminal-yellow text-terminal-yellow hover:bg-terminal-yellow/10 transition-colors rounded flex items-center gap-2"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume
+        </a>
+      </div>
+
       {/* Header */}
       <div className="text-center space-y-2 pb-6 border-b border-border">
         <h1 className="text-4xl font-bold text-terminal-cyan">Divyansh Joshi</h1>
