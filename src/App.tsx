@@ -13,6 +13,7 @@ import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import AIRevolution from "./pages/blog/AIRevolution";
 import InflationGuide from "./pages/blog/InflationGuide";
+import GraduatingIntoAI from "./pages/blog/GraduatingIntoAI";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/ai-revolution" element={<AIRevolution />} />
             <Route path="/blog/inflation-guide" element={<InflationGuide />} />
+            <Route path="/blog/graduating-into-ai" element={<GraduatingIntoAI />} />
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />

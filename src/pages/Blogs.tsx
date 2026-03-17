@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 const Blogs = () => {
   const blogs = [
     {
+      title: "Graduating Into AI's Labor Market Transformation",
+      date: "Feb 9, 2026",
+      platform: "Medium",
+      description: "What the data really says about software engineering entry-level jobs. I'm graduating in September 2026 and spent weeks analyzing research on AI's impact on early-career developers. Here's what Stanford economists, labor market data, and industry surveys reveal.",
+      link: "https://theoldregime.medium.com/graduating-into-ais-labor-market-transformation-4e195b553992",
+      readHere: "/blog/graduating-into-ai",
+    },
+    {
       title: "The Day Software Became the Boss: A Real Story from India's Tech Revolution",
       date: "Jul 3, 2025",
       platform: "Medium",
