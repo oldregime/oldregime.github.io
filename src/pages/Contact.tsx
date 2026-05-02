@@ -2,8 +2,8 @@ const Contact = () => {
   const contacts = [
     {
       label: "Email",
-      value: "divyansh8065@gmail.com",
-      href: "mailto:divyansh8065@gmail.com",
+      value: "divyanshjoshidev@gmail.com",
+      href: "mailto:divyanshjoshidev@gmail.com",
       color: "text-primary",
     },
     {
@@ -20,8 +20,8 @@ const Contact = () => {
     },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/theoldregime",
-      href: "https://linkedin.com/in/theoldregime",
+      value: "linkedin.com/in/divyanshjoshidev",
+      href: "https://www.linkedin.com/in/divyanshjoshidev/",
       color: "text-terminal-cyan",
     },
   ];

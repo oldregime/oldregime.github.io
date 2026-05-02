@@ -23,17 +23,17 @@ const Resume = () => {
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
           <span>+91-89624-30535</span>
           <span>|</span>
-          <a href="mailto:divyansh8065@gmail.com" className="hover:text-terminal-yellow">
-            divyansh8065@gmail.com
+          <a href="mailto:divyanshjoshidev@gmail.com" className="hover:text-terminal-yellow">
+            divyanshjoshidev@gmail.com
           </a>
           <span>|</span>
           <a 
-            href="https://www.linkedin.com/in/theoldregime/" 
+            href="https://www.linkedin.com/in/divyanshjoshidev/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-terminal-yellow"
           >
-            linkedin.com/in/theoldregime
+            linkedin.com/in/divyanshjoshidev
           </a>
           <span>|</span>
           <a 
