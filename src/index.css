@@ -47,6 +47,194 @@ All colors MUST be HSL.
 }
 
 @layer base {
+
+  /* Light Mode */
+  [data-theme="light"],
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --terminal-green: 142 76% 36%;
+    --terminal-yellow: 32 95% 44%;
+    --terminal-cyan: 199 89% 48%;
+  }
+
+  /* Catppuccin Latte (Light) */
+  [data-theme="catppuccin-latte"] {
+    --background: 220 23% 95%;
+    /* base: #eff1f5 */
+    --foreground: 237 16% 23%;
+    /* text: #4c4f69 */
+    --card: 220 23% 95%;
+    /* base */
+    --card-foreground: 237 16% 23%;
+    /* text */
+    --popover: 220 23% 95%;
+    --popover-foreground: 237 16% 23%;
+    --primary: 266 85% 58%;
+    /* mauve: #8839ef */
+    --primary-foreground: 220 23% 95%;
+    --secondary: 228 24% 96%;
+    /* crust: #dce0e8 (approx) */
+    --secondary-foreground: 237 16% 23%;
+    --muted: 231 20% 88%;
+    /* surface0: #ccd0da */
+    --muted-foreground: 227 18% 46%;
+    /* overlay0: #9ca0b0 */
+    --accent: 226 64% 88%;
+    /* lavender? no, maybe surface1 */
+    --accent-foreground: 237 16% 23%;
+    --destructive: 349 74% 57%;
+    /* red: #d20f39 */
+    --destructive-foreground: 220 23% 95%;
+    --border: 227 18% 48%;
+    /* overlay0 approx? or surface1/2 */
+    --input: 231 20% 88%;
+    /* surface0 */
+    --ring: 266 85% 58%;
+    /* mauve */
+
+    /* Terminal accents mapped to Catppuccin Latte */
+    --terminal-green: 110 70% 38%;
+    /* green: #40a02b */
+    --terminal-yellow: 35 100% 41%;
+    /* yellow: #df8e1d */
+    --terminal-cyan: 196 100% 38%;
+    /* sapphire/sky: #04a5e5 */
+  }
+
+  /* Catppuccin Frappé (Dark) */
+  [data-theme="catppuccin-frappe"] {
+    --background: 229 17% 19%;
+    /* base: #303446 */
+    --foreground: 227 20% 80%;
+    /* text: #c6d0f5 */
+    --card: 229 17% 19%;
+    --card-foreground: 227 20% 80%;
+    --popover: 229 17% 19%;
+    --popover-foreground: 227 20% 80%;
+    --primary: 279 46% 75%;
+    /* mauve: #ca9ee6 */
+    --primary-foreground: 229 17% 19%;
+    --secondary: 229 19% 16%;
+    /* mantle: #292c3c */
+    --secondary-foreground: 227 20% 80%;
+    --muted: 228 15% 26%;
+    /* surface0: #414559 */
+    --muted-foreground: 226 12% 47%;
+    /* overlay0: #737994 */
+    --accent: 228 15% 26%;
+    /* surface0 */
+    --accent-foreground: 227 20% 80%;
+    --destructive: 352 69% 62%;
+    /* red: #e78284 */
+    --destructive-foreground: 229 17% 19%;
+    --border: 228 15% 26%;
+    /* surface0 */
+    --input: 228 15% 26%;
+    --ring: 279 46% 75%;
+
+    --terminal-green: 112 56% 66%;
+    /* green: #a6d189 */
+    --terminal-yellow: 40 64% 73%;
+    /* yellow: #e5c890 */
+    --terminal-cyan: 189 42% 64%;
+    /* sky: #99d1db */
+  }
+
+  /* Catppuccin Macchiato (Dark) */
+  [data-theme="catppuccin-macchiato"] {
+    --background: 231 15% 15%;
+    /* base: #24273a */
+    --foreground: 227 21% 83%;
+    /* text: #cad3f5 */
+    --card: 231 15% 15%;
+    --card-foreground: 227 21% 83%;
+    --popover: 231 15% 15%;
+    --popover-foreground: 227 21% 83%;
+    --primary: 274 58% 81%;
+    /* mauve: #c6a0f6 */
+    --primary-foreground: 231 15% 15%;
+    --secondary: 232 17% 12%;
+    /* mantle: #1e2030 */
+    --secondary-foreground: 227 21% 83%;
+    --muted: 230 14% 23%;
+    /* surface0: #363a4f */
+    --muted-foreground: 227 12% 45%;
+    /* overlay0: #6e738d */
+    --accent: 230 14% 23%;
+    --accent-foreground: 227 21% 83%;
+    --destructive: 352 74% 67%;
+    /* red: #ed8796 */
+    --destructive-foreground: 231 15% 15%;
+    --border: 230 14% 23%;
+    --input: 230 14% 23%;
+    --ring: 274 58% 81%;
+
+    --terminal-green: 112 56% 66%;
+    /* green: #a6da95 */
+    --terminal-yellow: 40 69% 73%;
+    /* yellow: #eed49f */
+    --terminal-cyan: 197 68% 69%;
+    /* sky: #91d7e3 */
+  }
+
+  /* Catppuccin Mocha (Dark) */
+  [data-theme="catppuccin-mocha"] {
+    --background: 240 21% 15%;
+    /* base: #1e1e2e */
+    --foreground: 226 64% 88%;
+    /* text: #cdd6f4 */
+    --card: 240 21% 15%;
+    --card-foreground: 226 64% 88%;
+    --popover: 240 21% 15%;
+    --popover-foreground: 226 64% 88%;
+    --primary: 267 84% 81%;
+    /* mauve: #cba6f7 */
+    --primary-foreground: 240 21% 15%;
+    --secondary: 240 21% 12%;
+    /* mantle: #181825 */
+    --secondary-foreground: 226 64% 88%;
+    --muted: 237 16% 23%;
+    /* surface0: #313244 */
+    --muted-foreground: 240 7% 62%;
+    /* overlay0: #6c7086 */
+    --accent: 237 16% 23%;
+    --accent-foreground: 226 64% 88%;
+    --destructive: 343 81% 75%;
+    /* red: #f38ba8 */
+    --destructive-foreground: 240 21% 15%;
+    --border: 237 16% 23%;
+    --input: 237 16% 23%;
+    --ring: 267 84% 81%;
+
+    --terminal-green: 115 54% 76%;
+    /* green: #a6e3a1 */
+    --terminal-yellow: 41 86% 83%;
+    /* yellow: #f9e2af */
+    --terminal-cyan: 189 71% 73%;
+    /* sky: #89dceb */
+  }
+}
+
+@layer base {
   * {
     @apply border-border;
   }
@@ -57,8 +245,16 @@ All colors MUST be HSL.
 
   /* Terminal cursor blink animation */
   @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+
+    0%,
+    50% {
+      opacity: 1;
+    }
+
+    51%,
+    100% {
+      opacity: 0;
+    }
   }
 
   .cursor-blink {
