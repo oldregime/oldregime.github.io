@@ -86,7 +86,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-border text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Divyansh Joshi. All rights reserved</p>
         </footer>
       </div>
     </div>
