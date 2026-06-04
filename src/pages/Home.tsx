@@ -71,8 +71,8 @@ const Home = () => {
 
       {/* GitHub Contributions Grid Chart */}
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2 flex items-center gap-2">
-          <span>📊</span> GitHub Contribution Calendar
+        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2">
+          GitHub Contribution Calendar
         </h2>
         <div className="bg-secondary/20 p-4 border border-border rounded flex flex-col items-center justify-center">
           {/* Live Contributions Count Header */}
@@ -105,8 +105,8 @@ const Home = () => {
 
       {/* GitHub Stats Cards (Native Render) */}
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2 flex items-center gap-2">
-          <span>📈</span> GitHub Profile Analytics
+        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2">
+          GitHub Profile Analytics
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {/* Card 1: Stats summary */}
@@ -172,8 +172,8 @@ const Home = () => {
 
       {/* Open Source Merged PRs Section */}
       <section className="space-y-6">
-        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2 flex items-center gap-2">
-          <span>🚀</span> Open Source Contributions
+        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2">
+          Open Source Contributions
         </h2>
         <p className="text-muted-foreground text-sm">
           Contributions committed, reviewed, and merged into community-driven public repositories:
