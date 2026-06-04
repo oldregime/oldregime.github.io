@@ -51,7 +51,7 @@ const Home = () => {
       <section className="space-y-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-border pb-6">
           <div>
-            <h1 className="text-3xl font-bold text-[#2ea44f]">Divyansh Joshi</h1>
+            <h1 className="text-3xl font-bold text-terminal-cyan">Divyansh Joshi</h1>
             <p className="text-muted-foreground text-sm mt-1">
               Systems Engineer & Open Source Contributor | @oldregime
             </p>
@@ -61,7 +61,7 @@ const Home = () => {
               href="https://github.com/oldregime"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 border border-[#2ea44f] text-[#2ea44f] hover:bg-[#2ea44f]/10 transition-colors rounded text-xs font-semibold"
+              className="px-4 py-2 border border-terminal-yellow text-terminal-yellow hover:bg-terminal-yellow/10 transition-colors rounded text-xs font-semibold"
             >
               View GitHub Profile
             </a>
@@ -71,12 +71,12 @@ const Home = () => {
 
       {/* GitHub Contributions Grid Chart */}
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-[#2ea44f] border-b border-border pb-2 flex items-center gap-2">
+        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2 flex items-center gap-2">
           <span>📊</span> GitHub Contribution Calendar
         </h2>
         <div className="bg-secondary/20 p-4 border border-border rounded flex flex-col items-center justify-center">
           {/* Live Contributions Count Header */}
-          <div className="w-full max-w-3xl text-left text-sm font-semibold text-[#2ea44f] mb-3 select-none">
+          <div className="w-full max-w-3xl text-left text-sm font-semibold text-terminal-yellow mb-3 select-none">
             {contributionCount !== null ? (
               `${contributionCount} contributions in the last year`
             ) : (
@@ -105,13 +105,13 @@ const Home = () => {
 
       {/* GitHub Stats Cards (Native Render) */}
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-[#2ea44f] border-b border-border pb-2 flex items-center gap-2">
+        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2 flex items-center gap-2">
           <span>📈</span> GitHub Profile Analytics
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {/* Card 1: Stats summary */}
           <div className="bg-secondary/10 p-6 border border-border rounded-lg space-y-4">
-            <h3 className="text-[#2ea44f] font-bold text-base border-b border-border pb-2 flex justify-between">
+            <h3 className="text-terminal-cyan font-bold text-base border-b border-border pb-2 flex justify-between">
               <span>Stats Overview</span>
               <span className="text-xs text-muted-foreground font-normal">@oldregime</span>
             </h3>
@@ -141,7 +141,7 @@ const Home = () => {
 
           {/* Card 2: Commit Momentum */}
           <div className="bg-secondary/10 p-6 border border-border rounded-lg space-y-4">
-            <h3 className="text-[#2ea44f] font-bold text-base border-b border-border pb-2 flex justify-between">
+            <h3 className="text-terminal-cyan font-bold text-base border-b border-border pb-2 flex justify-between">
               <span>Commit Momentum</span>
               <span className="text-xs text-muted-foreground font-normal">Activity Metrics</span>
             </h3>
@@ -172,7 +172,7 @@ const Home = () => {
 
       {/* Open Source Merged PRs Section */}
       <section className="space-y-6">
-        <h2 className="text-xl font-semibold text-[#2ea44f] border-b border-border pb-2 flex items-center gap-2">
+        <h2 className="text-xl font-semibold text-terminal-cyan border-b border-border pb-2 flex items-center gap-2">
           <span>🚀</span> Open Source Contributions
         </h2>
         <p className="text-muted-foreground text-sm">
@@ -181,10 +181,10 @@ const Home = () => {
 
         <div className="space-y-8 mt-4">
           {mergedPRs.map((pr, index) => (
-            <div key={index} className="border-l-2 border-[#2ea44f] pl-6 space-y-2 group">
+            <div key={index} className="border-l-2 border-primary pl-6 space-y-2 group">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
                 <div>
-                  <h3 className="font-semibold text-base text-foreground group-hover:text-[#2ea44f] transition-colors">
+                  <h3 className="font-semibold text-base text-foreground group-hover:text-terminal-yellow transition-colors">
                     <a href={pr.prUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
                       {pr.title}
                     </a>
