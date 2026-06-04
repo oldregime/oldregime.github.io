@@ -9,7 +9,6 @@ const Home = () => {
     const command = "neofetch";
     let index = 0;
     
-    // Initial delay before typing starts
     const startDelay = setTimeout(() => {
       const typingInterval = setInterval(() => {
         if (index < command.length) {
@@ -17,10 +16,8 @@ const Home = () => {
           index++;
         } else {
           clearInterval(typingInterval);
-          // Simulate "pressing enter" after typing is done
           const executeDelay = setTimeout(() => {
             setIsExecuted(true);
-            // Show next prompt after output is printed
             const promptDelay = setTimeout(() => {
               setShowNextPrompt(true);
             }, 500);
@@ -28,23 +25,29 @@ const Home = () => {
           }, 600);
           return () => clearTimeout(executeDelay);
         }
-      }, 120); // typing speed (ms per char)
+      }, 120);
       return () => clearInterval(typingInterval);
     }, 400);
 
     return () => clearTimeout(startDelay);
   }, []);
 
-  const asciiLogo = `     _________________
-    /                /|
-   /   [=]    [=]   / |
-  /________________/  |
-  |                |  |
-  |   [=]    [=]   |  |
-  |________________|  |
-  |                |  /
-  |   [=]    [=]   | /
-  |________________|/`;
+  // Outlined Linux Penguin (Tux) ASCII Art (15 lines)
+  const asciiLogo = `            .---.
+           /     \\
+          \\\\  O O  /
+           |  V  |
+          /  ___  \\
+         /  /   \\  \\
+        /  /  V  \\  \\
+       /  /       \\  \\
+      /  /         \\  \\
+     /  /           \\  \\
+    |  |  /\\\\     /\\\\  |  |
+    |  | /  \\\\___/  \\\\ |  |
+     \\\\  \\\\           /  /
+      \\\\  \`'-------'\`  /
+       \`'-----------\`'`;
 
   return (
     <div className="font-mono text-sm leading-relaxed space-y-6">
@@ -60,10 +63,10 @@ const Home = () => {
 
       {/* Terminal Command Line */}
       <div>
-        <div className="flex items-center gap-1">
-          <span className="text-terminal-green">divyansh</span>
+        <div className="flex items-center gap-1 animate-fade-in">
+          <span className="text-[#51a2da] font-semibold">divyansh</span>
           <span className="text-muted-foreground">@</span>
-          <span className="text-terminal-cyan">portfolio</span>
+          <span className="text-[#51a2da] font-semibold">lenovo-loq</span>
           <span className="text-muted-foreground">:</span>
           <span className="text-terminal-yellow">~</span>
           <span className="text-foreground">$</span>
@@ -77,75 +80,128 @@ const Home = () => {
       {/* Neofetch Output */}
       {isExecuted && (
         <div className="flex flex-col md:flex-row gap-6 md:gap-12 animate-fade-in duration-300">
-          {/* Left Column: ASCII Server Rack */}
-          <pre className="text-terminal-green font-bold select-none leading-tight">
+          {/* Left Column: Tux Penguin */}
+          <pre className="text-yellow-500 font-bold select-none leading-tight">
             {asciiLogo}
           </pre>
 
-          {/* Right Column: System Specs */}
-          <div className="space-y-1.5">
+          {/* Right Column: Fedora KDE System Specs */}
+          <div className="space-y-1">
             <div>
-              <span className="text-terminal-cyan font-bold">divyansh</span>
-              <span className="text-muted-foreground">@</span>
-              <span className="text-terminal-cyan font-bold">vitbhopal</span>
+              <span className="text-[#51a2da] font-bold">divyansh</span>
+              <span className="text-foreground">@</span>
+              <span className="text-[#51a2da] font-bold">lenovo-loq</span>
             </div>
-            <div className="text-muted-foreground select-none">------------------------------------</div>
+            <div className="text-muted-foreground select-none">-------------------</div>
+            
             <div>
-              <span className="text-terminal-yellow font-semibold">OS</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">Ubuntu / CSE @ VIT Bhopal</span>
-            </div>
-            <div>
-              <span className="text-terminal-yellow font-semibold">Role</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">Systems Engineer & AI Developer</span>
+              <span className="text-[#51a2da] font-bold">OS</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">Fedora Linux 40 (KDE Plasma) x86_64</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Kernel</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">LangGraph v0.1.0 // Proxmox VE 8.1</span>
+              <span className="text-[#51a2da] font-bold">Host</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">Lenovo LOQ 15APH8 (82XT)</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Uptime</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">Graduation expected June 2026</span>
+              <span className="text-[#51a2da] font-bold">Kernel</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">6.8.9-300.fc40.x86_64</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Shell</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">zsh (React Virtual Console)</span>
+              <span className="text-[#51a2da] font-bold">Uptime</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">2 hours, 15 mins</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Homelab</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">TrueNAS Core + Proxmox RAID (99.9% Uptime)</span>
+              <span className="text-[#51a2da] font-bold">Packages</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">2450 (rpm), 15 (flatpak)</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Focus</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">Agentic Workflows & Infrastructure Automation</span>
+              <span className="text-[#51a2da] font-bold">Shell</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">zsh 5.9</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Skills</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-foreground ml-2">Python, AWS, GCP, Docker, VectorDB, Git</span>
+              <span className="text-[#51a2da] font-bold">Resolution</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">1920x1080</span>
             </div>
             <div>
-              <span className="text-terminal-yellow font-semibold">Status</span>
-              <span className="text-muted-foreground">:</span>
-              <span className="text-terminal-green font-bold ml-2">🟢 Open to Internships / Jobs</span>
+              <span className="text-[#51a2da] font-bold">DE</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">Plasma 6.0.5</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">WM</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">KWin</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">WM Theme</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">Breeze-Dark</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">Theme</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">Breeze-Dark [GTK2/3]</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">Icons</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">Breeze [GTK2/3]</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">Terminal</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">konsole</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">CPU</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">AMD Ryzen 7 7840HS w/ Radeon 780M (16) @ 5.137GHz</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">GPU</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">NVIDIA GeForce RTX 4050 Mobile / Max-Q</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">GPU</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">AMD Radeon 780M</span>
+            </div>
+            <div>
+              <span className="text-[#51a2da] font-bold">Memory</span>
+              <span className="text-foreground">:</span>
+              <span className="text-foreground ml-2">7821MiB / 15420MiB (50%)</span>
             </div>
 
             {/* Color Blocks */}
-            <div className="flex gap-1.5 pt-4">
-              <span className="w-5 h-4 bg-black border border-neutral-700"></span>
-              <span className="w-5 h-4 bg-red-500"></span>
-              <span className="w-5 h-4 bg-green-500"></span>
-              <span className="w-5 h-4 bg-yellow-500"></span>
-              <span className="w-5 h-4 bg-blue-500"></span>
-              <span className="w-5 h-4 bg-purple-500"></span>
-              <span className="w-5 h-4 bg-cyan-500"></span>
-              <span className="w-5 h-4 bg-white"></span>
+            <div className="flex flex-col gap-0.5 pt-4 select-none">
+              <div className="flex gap-1.5">
+                <span className="w-5 h-4 bg-black border border-neutral-800"></span>
+                <span className="w-5 h-4 bg-red-600"></span>
+                <span className="w-5 h-4 bg-green-600"></span>
+                <span className="w-5 h-4 bg-yellow-600"></span>
+                <span className="w-5 h-4 bg-blue-600"></span>
+                <span className="w-5 h-4 bg-purple-600"></span>
+                <span className="w-5 h-4 bg-cyan-600"></span>
+                <span className="w-5 h-4 bg-gray-300"></span>
+              </div>
+              <div className="flex gap-1.5">
+                <span className="w-5 h-4 bg-gray-600"></span>
+                <span className="w-5 h-4 bg-red-400"></span>
+                <span className="w-5 h-4 bg-green-400"></span>
+                <span className="w-5 h-4 bg-yellow-400"></span>
+                <span className="w-5 h-4 bg-blue-400"></span>
+                <span className="w-5 h-4 bg-purple-400"></span>
+                <span className="w-5 h-4 bg-cyan-400"></span>
+                <span className="w-5 h-4 bg-white"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -154,14 +210,14 @@ const Home = () => {
       {/* Next Command Line after execution */}
       {showNextPrompt && (
         <div className="pt-4">
-          <div className="flex items-center gap-1">
-            <span className="text-terminal-green">divyansh</span>
+          <div className="flex items-center gap-1 animate-fade-in">
+            <span className="text-[#51a2da] font-semibold">divyansh</span>
             <span className="text-muted-foreground">@</span>
-            <span className="text-terminal-cyan">portfolio</span>
+            <span className="text-[#51a2da] font-semibold">lenovo-loq</span>
             <span className="text-muted-foreground">:</span>
             <span className="text-terminal-yellow">~</span>
             <span className="text-foreground">$</span>
-            <span className="inline-block w-2 h-4 bg-foreground ml-2.5 terminal-cursor"></span>
+            <span className="inline-block w-2 h-4 bg-foreground ml-2 terminal-cursor"></span>
           </div>
         </div>
       )}
