@@ -139,51 +139,31 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Card 2: Top languages */}
+          {/* Card 2: Commit Momentum */}
           <div className="bg-secondary/10 p-6 border border-border rounded-lg space-y-4">
-            <h3 className="text-[#2ea44f] font-bold text-base border-b border-border pb-2">
-              Top Languages
+            <h3 className="text-[#2ea44f] font-bold text-base border-b border-border pb-2 flex justify-between">
+              <span>Commit Momentum</span>
+              <span className="text-xs text-muted-foreground font-normal">Activity Metrics</span>
             </h3>
-            <div className="space-y-4">
-              {/* Language 1: TypeScript */}
-              <div className="space-y-1">
-                <div className="flex justify-between text-xs font-mono">
-                  <span className="text-foreground">TypeScript</span>
-                  <span className="text-muted-foreground">42.5%</span>
-                </div>
-                <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#39d353] h-full rounded-full" style={{ width: "42.5%" }}></div>
-                </div>
+            <div className="space-y-3 font-mono text-sm">
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Longest Streak:</span>
+                <span className="font-bold text-foreground">18 Days</span>
               </div>
-              {/* Language 2: Python */}
-              <div className="space-y-1">
-                <div className="flex justify-between text-xs font-mono">
-                  <span className="text-foreground">Python</span>
-                  <span className="text-muted-foreground">25.3%</span>
-                </div>
-                <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#2ea44f] h-full rounded-full" style={{ width: "25.3%" }}></div>
-                </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Merged PR Acceptance Rate:</span>
+                <span className="font-bold text-emerald-400">100%</span>
               </div>
-              {/* Language 3: JavaScript */}
-              <div className="space-y-1">
-                <div className="flex justify-between text-xs font-mono">
-                  <span className="text-foreground">JavaScript</span>
-                  <span className="text-muted-foreground">18.2%</span>
-                </div>
-                <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#26a641] h-full rounded-full" style={{ width: "18.2%" }}></div>
-                </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Weekly Peak Hours:</span>
+                <span className="font-bold text-foreground">18:00 - 22:00</span>
               </div>
-              {/* Language 4: Java */}
-              <div className="space-y-1">
-                <div className="flex justify-between text-xs font-mono">
-                  <span className="text-foreground">Java</span>
-                  <span className="text-muted-foreground">14.0%</span>
-                </div>
-                <div className="w-full bg-secondary h-2 rounded-full overflow-hidden">
-                  <div className="bg-[#0e4429] h-full rounded-full" style={{ width: "14.0%" }}></div>
-                </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Commits / PR Ratio:</span>
+                <span className="font-bold text-foreground">105:1</span>
+              </div>
+              <div className="text-xs text-muted-foreground pt-1.5 border-t border-border/20 italic">
+                Focus: Post-lecture dev blocks & open source contributions.
               </div>
             </div>
           </div>
