@@ -1,28 +1,28 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Bitcoin Signet Monitoring Stack",
-      period: "2024-2025",
-      tech: "LGTM Stack (Loki, Grafana, Tempo, Mimir), Docker, Ansible, Bitcoin Core",
+      title: "Medical AI Suite & Clinical Trial Matcher",
+      period: "2026",
+      tech: "LangGraph, LangChain, Groq, Streamlit, PyPDF, REST APIs",
       description: [
-        "Built a production-ready monitoring solution for Bitcoin Signet nodes using Grafana Alloy, Loki, and Grafana with automated deployment and professional-grade monitoring capabilities.",
-        "Implemented real-time log collection, centralized storage, and advanced visualization with 7 critical alert rules for node health, chain reorganization, and performance monitoring.",
-        "Automated infrastructure deployment using Docker Compose and Ansible with comprehensive documentation and troubleshooting guides.",
-        "Achieved <1 second log processing latency and <30 second alert response time with 99.9% uptime monitoring for blockchain operations.",
+        "Engineered an AI-driven healthcare platform using LangGraph and Groq (Llama 3.1) to autonomously match patient profiles against the ClinicalTrials.gov API, analyzing up to 20 actively recruiting trials in under 5 seconds.",
+        "Developed an automated PDF extraction pipeline utilizing PyPDF and LangChain, successfully structuring 10,000+ character unstructured medical reports into actionable JSON datasets mapping 15+ key biomarkers.",
+        "Deployed a responsive Streamlit dashboard with geographic filtering and plain-English summaries, reducing manual clinical screening time by over 90% while achieving sub-3-second LLM inference speeds."
       ],
-      link: "https://github.com/oldregime/luganode2025",
+      link: "https://clinical-trial-screener-divyansh.streamlit.app/",
+      github: "https://github.com/oldregime/clinical-trial-screener"
     },
     {
-      title: "Personal Finance Tracker (MERN Stack)",
-      period: "2024-2025",
-      tech: "MongoDB, Express.js, React, Node.js, JWT, OAuth",
+      title: "IoT Remote Access & Private Cloud Controller",
+      period: "2025",
+      tech: "C++, PlatformIO, ESP32, Python, REST APIs, HTTPS, LittleFS, WoL",
       description: [
-        "Built a comprehensive personal finance management application with the MERN stack featuring secure user authentication with JWT and OAuth (Google, Facebook).",
-        "Implemented expense tracking, income management, and budget planning features with category-wise organization and monthly budget monitoring.",
-        "Designed interactive data visualization with charts and reports to analyze spending habits and financial progress across devices.",
-        "Deployed full-stack application with MongoDB database, Express.js backend API, and React frontend on Vercel.",
+        "Engineered a secure IoT gateway using ESP32 (C++/PlatformIO) and Telegram Bot API to trigger remote Wake-on-LAN (WoL) magic packets, eliminating the need to expose management ports (SSH/IPMI) to the public internet.",
+        "Integrated TrueNAS REST API client over secure HTTPS to execute authenticated ACPI shutdown and reboot actions, and implemented a custom cron-like task scheduler that persists state across reboots using LittleFS flash storage.",
+        "Developed a companion Python network scanning utility to auto-discover active hosts, map MAC/IP address tables, and dynamically sync configurations back to the microcontroller over the local subnet."
       ],
-      link: "https://merntracker.vercel.app/",
+      link: "https://github.com/oldregime/esp32-wake-on-lan-telegram",
+      github: "https://github.com/oldregime/esp32-wake-on-lan-telegram"
     },
     {
       title: "GradeWise - AI Powered Grading Tool",
@@ -31,53 +31,23 @@ const Projects = () => {
       description: [
         "Developed a full-stack web application to automate student paper grading using AI, significantly reducing grading time for educators.",
         "Implemented AI flows for extracting questions, generating feedback, and scoring similarity, leveraging Genkit and Google Cloud Platform for scalability and reliability.",
-        "Designed a user-friendly interface with Next.js and Tailwind CSS, providing a seamless experience for teachers to upload papers, review grades, and provide final feedback.",
+        "Designed a user-friendly interface with Next.js and Tailwind CSS, providing a seamless experience for teachers to upload papers, review grades, and provide final feedback."
       ],
-      link: "https://github.com/oldregime/VitGrader",
-    },
-    {
-      title: "File Management System Architecture",
-      period: "2025",
-      tech: "Hybrid PARA + GTD + Johnny Decimal System",
-      description: [
-        "Designed comprehensive digital organization framework using hierarchical folder structure with Scientific methodology for enhanced productivity.",
-        "Implemented standardized naming convention with universal type codes for consistent file identification across project files.",
-        "Established automated categorization system reducing file retrieval time by 60% through structured libraries and development tools organization.",
-        "Created scalable template library with version control integration supporting collaborative development workflows.",
-      ],
-      link: "https://github.com/oldregime/FileStructureUbuntu",
-    },
-    {
-      title: "Fraudulent App Detection Using NLP",
-      period: "2024",
-      tech: "Machine Learning + Data Manipulation",
-      description: [
-        "Developed a machine learning model achieving 85% accuracy in detecting fraudulent apps based on a dataset of over 1,000 user reviews using NLP techniques.",
-        "Integrated preprocessing pipelines for text data cleaning and vectorization, improving model F1-score by 0.05 through enhanced techniques.",
-      ],
+      link: "https://github.com/oldregime/GradeWise",
+      github: "https://github.com/oldregime/GradeWise"
     },
     {
       title: "NAS Server Development",
-      period: "2024",
-      tech: "Personal Project",
+      period: "Dec 2024 – May 2025",
+      tech: "Proxmox, TrueNAS, ZFS, Python, Cloudflare Tunnels",
       description: [
-        "Deployed NAS server using Proxmox with RAID storage and mechanized backup, ensuring 99.9% data availability.",
-        "Deployed SSH tunnel for secure remote access with encryption mechanisms, for 15+ primary users.",
-        "Optimized performance through RAID configuration and monitoring tools, achieving approximately 20% faster file transfer speeds for large datasets.",
+        "Architected a highly available TrueNAS ecosystem on Proxmox utilizing ZFS RAID and a 3-2-1-1 backup strategy, achieving 99.9% data availability.",
+        "Engineered automated Python workflows leveraging the TrueNAS REST API to provision containerized apps (Nextcloud, n8n), audit NFSv4 permissions, and monitor system health.",
+        "Established secure zero-trust network access and automated offsite replication using Cloudflare Tunnels and Tailscale for 15+ concurrent users."
       ],
       link: "https://github.com/oldregime/NAS-Server-Development-2024",
-    },
-    {
-      title: "Web Development Projects",
-      period: "2023-2024",
-      tech: "HTML/CSS/JS/React",
-      description: [
-        "Built a full-stack MERN application for personal task and progress tracking. (MERN-Expense Tracker)",
-        "Created an E-Commerce platform website to showcase projects and skills using HTML/CSS and JavaScript. (VITT)",
-        "Designed and deployed a professional web presence for LNJ Corp Sol. (lnjoshics.co.in)",
-        "Built a web-based tax calculation utility using JavaScript for simplified tax estimations. (NeonTAX)",
-      ],
-    },
+      github: "https://github.com/oldregime/NAS-Server-Development-2024"
+    }
   ];
 
   return (
@@ -94,8 +64,8 @@ const Projects = () => {
         {projects.map((project, index) => (
           <article key={index} className="border-l-2 border-primary pl-6">
             <div className="mb-4">
-              <h2 className="text-xl mb-2">
-                {project.link ? (
+              <h2 className="text-xl mb-2 flex items-center gap-3 flex-wrap">
+                {project.link && project.link !== project.github ? (
                   <a 
                     href={project.link} 
                     target="_blank" 
@@ -105,7 +75,18 @@ const Projects = () => {
                     {project.title}
                   </a>
                 ) : (
-                  project.title
+                  <span>{project.title}</span>
+                )}
+                {project.github && (
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-muted-foreground hover:text-terminal-cyan transition-colors"
+                    title="View Source on GitHub"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                  </a>
                 )}
               </h2>
               <div className="flex gap-4 text-sm">

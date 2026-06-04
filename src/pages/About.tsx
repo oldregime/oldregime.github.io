@@ -2,11 +2,11 @@ import profileImage from "@/assets/profile-ascii.jpg";
 
 const About = () => {
   const skills = {
-    "Languages & Frameworks": ["Java", "Python", "JavaScript", "TypeScript", "MERN Stack"],
-    "DevOps & Infrastructure": ["Docker", "Firebase", "AWS", "CloudFlare", "Git", "Linux", "Bash/Shell Scripting", "RAID Configuration", "Backup & Recovery Systems"],
-    "Monitoring & Observability": ["LGTM Stack (Loki, Grafana, Tempo, Mimir)", "Prometheus", "Grafana Alloy", "System Monitoring"],
-    "Testing & Automation": ["Selenium WebDriver", "LambdaTest", "Jenkins"],
-    "Databases": ["MySQL", "MongoDB", "Supabase"],
+    "Languages & Data Processing": ["Python (Pandas, NumPy)", "SQL", "Java"],
+    "AI & LLM Integrations": ["LangGraph", "LangChain", "Genkit", "Groq (Llama, Gemma, Kimi)"],
+    "Cloud & Infrastructure": ["AWS", "Google Cloud Platform (GCP)", "Docker", "Proxmox", "TrueNAS"],
+    "Databases & Storage": ["MongoDB (Atlas-AI)", "Supabase", "ZFS", "Vector Embeddings"],
+    "Data Engineering & Tools": ["REST APIs", "CI/CD", "Git", "Streamlit", "Cron", "Linux/Bash"],
   };
 
   const education = [
@@ -92,13 +92,13 @@ const About = () => {
         <div className="border-l-2 border-primary pl-6">
           <h3 className="text-lg mb-2">NAS Server Development</h3>
           <div className="flex gap-4 text-sm mb-3">
-            <span className="text-terminal-yellow">2024</span>
-            <span className="text-muted-foreground">Personal Project</span>
+            <span className="text-terminal-yellow">Dec 2024 – May 2025</span>
+            <span className="text-muted-foreground">LNJ Corporate Solution</span>
           </div>
           <ul className="space-y-2 text-muted-foreground">
-            <li>- Deployed NAS server using Proxmox with RAID storage and mechanized backup, ensuring 99.9% data availability.</li>
-            <li>- Deployed SSH tunnel for secure remote access with encryption mechanisms, for 15+ primary users.</li>
-            <li>- Optimized performance through RAID configuration and monitoring tools, achieving approximately 20% faster file transfer speeds for large datasets.</li>
+            <li>- Architected a highly available TrueNAS ecosystem on Proxmox utilizing ZFS RAID and a 3-2-1-1 backup strategy, achieving 99.9% data availability.</li>
+            <li>- Engineered automated Python workflows leveraging the TrueNAS REST API to provision containerized apps (Nextcloud, n8n), audit NFSv4 permissions, and monitor system health.</li>
+            <li>- Established secure zero-trust network access and automated offsite replication using Cloudflare Tunnels and Tailscale for 15+ concurrent users.</li>
           </ul>
         </div>
       </section>

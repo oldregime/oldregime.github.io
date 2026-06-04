@@ -88,14 +88,14 @@ const Resume = () => {
           <div className="flex justify-between items-start mb-2">
             <div>
               <h3 className="font-semibold text-lg">NAS Server Development</h3>
-              <p className="text-muted-foreground">Personal Project</p>
+              <p className="text-muted-foreground">LNJ Corporate Solution</p>
             </div>
-            <span className="text-terminal-yellow">2024</span>
+            <span className="text-terminal-yellow">Dec 2024 – May 2025</span>
           </div>
           <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-            <li>Deployed NAS server using Proxmox with RAID storage and mechanized backup, ensuring 99.9% data availability.</li>
-            <li>Deployed SSH tunnel for secure remote access with encryption mechanisms, for 15+ primary users.</li>
-            <li>Optimized performance through RAID configuration and monitoring tools, achieving approximately 20% faster file transfer speeds for large datasets.</li>
+            <li>Architected a highly available TrueNAS ecosystem on Proxmox utilizing ZFS RAID and a 3-2-1-1 backup strategy, achieving 99.9% data availability.</li>
+            <li>Engineered automated Python workflows leveraging the TrueNAS REST API to provision containerized apps (Nextcloud, n8n), audit NFSv4 permissions, and monitor system health.</li>
+            <li>Established secure zero-trust network access and automated offsite replication using Cloudflare Tunnels and Tailscale for 15+ concurrent users.</li>
           </ul>
         </div>
       </section>
@@ -179,10 +179,11 @@ const Resume = () => {
           Technical Skills
         </h2>
         <div className="space-y-2 text-muted-foreground">
-          <p><strong className="text-foreground">Languages:</strong> Java, Python (Pandas, Matplotlib), Basic MERN, Data Visualization</p>
-          <p><strong className="text-foreground">Testing & Automation:</strong> Selenium WebDriver, LambdaTest, Jenkins</p>
-          <p><strong className="text-foreground">Cloud & DevOps:</strong> Firebase, Amazon Web Services, Docker, Git, CloudFlare</p>
-          <p><strong className="text-foreground">Databases:</strong> MySQL, MongoDB, Supabase</p>
+          <p><strong className="text-foreground">Languages & Data Processing:</strong> Python (Pandas, NumPy), SQL, Java</p>
+          <p><strong className="text-foreground">AI & LLM Integrations:</strong> LangGraph, LangChain, Genkit, Groq</p>
+          <p><strong className="text-foreground">Cloud & Infrastructure:</strong> AWS, GCP, Docker, Proxmox, TrueNAS</p>
+          <p><strong className="text-foreground">Databases & Storage:</strong> MongoDB (Atlas-AI), Supabase, ZFS, Vector Embeddings</p>
+          <p><strong className="text-foreground">Data Engineering & Tools:</strong> REST APIs, CI/CD, Git, Streamlit, Linux/Bash</p>
         </div>
       </section>
     </div>
