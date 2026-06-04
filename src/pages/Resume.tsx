@@ -100,6 +100,54 @@ const Resume = () => {
         </div>
       </section>
 
+      {/* Open Source Contributions */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4 text-terminal-cyan border-b border-primary pb-2">
+          Open Source Contributions
+        </h2>
+        <div className="space-y-6">
+          <div>
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-semibold text-lg">
+                  Contributor @ <a href="https://github.com/delvedor/find-my-way" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">delvedor/find-my-way</a>
+                </h3>
+                <p className="text-muted-foreground text-sm">High-performance HTTP Router for Node.js (used by Fastify)</p>
+              </div>
+              <span className="text-terminal-yellow">May 2026</span>
+            </div>
+            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <li>
+                Authored and merged pull request <a href="https://github.com/delvedor/find-my-way/pull/432" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#432</a>: <code>feat: add onMaxParamLength to support 414 URI Too Long</code>.
+              </li>
+              <li>
+                Engineered parameter-length constraints into the HTTP route traversal logic to block malformed, oversized requests, mitigating potential ReDoS (Regular Expression Denial of Service) vectors.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-semibold text-lg">
+                  Contributor @ <a href="https://github.com/TEAMMATES/teammates" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">TEAMMATES/teammates</a>
+                </h3>
+                <p className="text-muted-foreground text-sm">Enterprise-grade Peer Evaluation & Feedback Management System</p>
+              </div>
+              <span className="text-terminal-yellow">May 2026</span>
+            </div>
+            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <li>
+                Authored and merged pull request <a href="https://github.com/TEAMMATES/teammates/pull/13862" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#13862</a>: <code>Change getDisplayWeight return type from any to string</code>.
+              </li>
+              <li>
+                Strengthened type-safety across evaluation components by refactoring type footprints, eliminating legacy TypeScript <code>any</code> types to reduce compilation and runtime defects.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* Projects */}
       <section>
         <h2 className="text-2xl font-semibold mb-4 text-terminal-cyan border-b border-primary pb-2">
