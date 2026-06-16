@@ -24,6 +24,39 @@ const Home = () => {
 
   const mergedPRs = [
     {
+      title: "refactor(cli): extract duplicated table helper into a shared module",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/225",
+      description:
+        "Refactored the CLI application to remove duplicated table-formatting helper logic. Extracted a single table(rows, columns) helper into a shared module and created a comprehensive unit test suite to verify exact formatting output.",
+      tags: ["JavaScript", "Node.js", "CLI", "Refactoring", "Testing"],
+      date: "Jun 2026",
+      status: "Under Review",
+    },
+    {
+      title: "refactor: replace glob dependency with custom glob using node:fs",
+      repo: "fastify/fastify-static",
+      repoUrl: "https://github.com/fastify/fastify-static",
+      prUrl: "https://github.com/fastify/fastify-static/pull/587",
+      description:
+        "Removed the external glob package dependency to reduce package footprint. Implemented a zero-dependency recursive directory walker in lib/glob.js with support for globIgnore pattern-matching, dotfiles, and symlinks, achieving 100% test coverage.",
+      tags: ["JavaScript", "Node.js", "Fastify", "Performance", "Testing"],
+      date: "Jun 2026",
+      status: "Under Review",
+    },
+    {
+      title: "test: prevent environment-dependent CAPTCHA test failures",
+      repo: "TEAMMATES/teammates",
+      repoUrl: "https://github.com/TEAMMATES/teammates",
+      prUrl: "https://github.com/TEAMMATES/teammates/pull/14202",
+      description:
+        "Resolved environment-dependent test failures in the frontend spec suite by resetting the CAPTCHA site key to an empty string during test setup, preventing Angular compilation errors when local developer environments have custom keys configured.",
+      tags: ["TypeScript", "Angular", "Testing", "reCAPTCHA"],
+      date: "Jun 2026",
+      status: "Merged",
+    },
+    {
       title: "feat: add onMaxParamLength to support 414 URI Too Long",
       repo: "delvedor/find-my-way",
       repoUrl: "https://github.com/delvedor/find-my-way",
@@ -32,6 +65,7 @@ const Home = () => {
         "Engineered parameter-length constraints into the HTTP route traversal logic to block malformed, oversized requests, preventing potential Regular Expression Denial of Service (ReDoS) vectors in Node.js backend routers.",
       tags: ["TypeScript", "Node.js", "Fastify", "Security", "Routing"],
       date: "May 2026",
+      status: "Merged",
     },
     {
       title: "Change getDisplayWeight return type from any to string",
@@ -42,6 +76,7 @@ const Home = () => {
         "Refactored types across evaluation components, eliminating legacy TypeScript 'any' types in student evaluation calculators to improve type safety and maintainability in an enterprise student peer evaluation platform.",
       tags: ["TypeScript", "React", "Static Analysis", "Type Safety"],
       date: "May 2026",
+      status: "Merged",
     },
   ];
 
@@ -122,7 +157,11 @@ const Home = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Merged Pull Requests:</span>
-                <span className="font-bold text-foreground">4</span>
+                <span className="font-bold text-foreground">5</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Open Pull Requests:</span>
+                <span className="font-bold text-foreground">2</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Stars:</span>
@@ -130,7 +169,7 @@ const Home = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Contributed To:</span>
-                <span className="font-bold text-foreground">4 repositories</span>
+                <span className="font-bold text-foreground">6 repositories</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">PR Merge Success Rate:</span>
@@ -202,9 +241,15 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 text-xs bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 rounded-full font-bold select-none">
-                    ✓ Merged
-                  </span>
+                  {pr.status === "Merged" ? (
+                    <span className="px-2 py-0.5 text-xs bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 rounded-full font-bold select-none">
+                      ✓ Merged
+                    </span>
+                  ) : (
+                    <span className="px-2 py-0.5 text-xs bg-yellow-950/40 text-yellow-400 border border-yellow-500/30 rounded-full font-bold select-none">
+                      ⏳ Under Review
+                    </span>
+                  )}
                   <span className="text-xs text-terminal-yellow select-none">{pr.date}</span>
                 </div>
               </div>
