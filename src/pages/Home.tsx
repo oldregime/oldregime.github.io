@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Check } from "lucide-react";
 
 const Home = () => {
   const [contributionCount, setContributionCount] = useState<number | null>(null);
@@ -216,8 +217,8 @@ const Home = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   {pr.status === "Merged" ? (
-                    <span className="px-2 py-0.5 text-xs bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 rounded-full font-bold select-none">
-                      ✓ Merged
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 text-xs bg-emerald-950/40 text-emerald-400 border border-emerald-500/30 rounded-full font-bold select-none">
+                      <Check className="w-3 h-3 stroke-[3]" /> Merged
                     </span>
                   ) : (
                     <span className="px-2 py-0.5 text-xs bg-yellow-950/40 text-yellow-400 border border-yellow-500/30 rounded-full font-bold select-none">
