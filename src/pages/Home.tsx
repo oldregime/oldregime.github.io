@@ -25,6 +25,17 @@ const Home = () => {
 
   const mergedPRs = [
     {
+      title: "[#13698] Update PR Checker to fail workflow and persist comment updates",
+      repo: "TEAMMATES/teammates",
+      repoUrl: "https://github.com/TEAMMATES/teammates",
+      prUrl: "https://github.com/TEAMMATES/teammates/pull/14234",
+      description:
+        "Improved GitHub Actions PR checker by failing the workflow with core.setFailed on lint/build violations, updating existing checker comments instead of posting new ones to reduce notification spam, and adding author verification to prevent spoofing.",
+      tags: ["GitHub Actions", "JavaScript", "CI/CD", "Node.js"],
+      date: "Jun 2026",
+      status: "Merged",
+    },
+    {
       title: "test: prevent environment-dependent CAPTCHA test failures",
       repo: "TEAMMATES/teammates",
       repoUrl: "https://github.com/TEAMMATES/teammates",
@@ -136,7 +147,7 @@ const Home = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Merged Pull Requests:</span>
-                <span className="font-bold text-foreground">5</span>
+                <span className="font-bold text-foreground">6</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Stars:</span>
