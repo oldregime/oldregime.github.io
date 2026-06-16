@@ -24,28 +24,6 @@ const Home = () => {
 
   const mergedPRs = [
     {
-      title: "refactor(cli): extract duplicated table helper into a shared module",
-      repo: "solomon2773/nora",
-      repoUrl: "https://github.com/solomon2773/nora",
-      prUrl: "https://github.com/solomon2773/nora/pull/225",
-      description:
-        "Refactored the CLI application to remove duplicated table-formatting helper logic. Extracted a single table(rows, columns) helper into a shared module and created a comprehensive unit test suite to verify exact formatting output.",
-      tags: ["JavaScript", "Node.js", "CLI", "Refactoring", "Testing"],
-      date: "Jun 2026",
-      status: "Under Review",
-    },
-    {
-      title: "refactor: replace glob dependency with custom glob using node:fs",
-      repo: "fastify/fastify-static",
-      repoUrl: "https://github.com/fastify/fastify-static",
-      prUrl: "https://github.com/fastify/fastify-static/pull/587",
-      description:
-        "Removed the external glob package dependency to reduce package footprint. Implemented a zero-dependency recursive directory walker in lib/glob.js with support for globIgnore pattern-matching, dotfiles, and symlinks, achieving 100% test coverage.",
-      tags: ["JavaScript", "Node.js", "Fastify", "Performance", "Testing"],
-      date: "Jun 2026",
-      status: "Under Review",
-    },
-    {
       title: "test: prevent environment-dependent CAPTCHA test failures",
       repo: "TEAMMATES/teammates",
       repoUrl: "https://github.com/TEAMMATES/teammates",
@@ -160,16 +138,12 @@ const Home = () => {
                 <span className="font-bold text-foreground">5</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Open Pull Requests:</span>
-                <span className="font-bold text-foreground">2</span>
-              </div>
-              <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Stars:</span>
                 <span className="font-bold text-foreground">1</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Contributed To:</span>
-                <span className="font-bold text-foreground">6 repositories</span>
+                <span className="font-bold text-foreground">4 repositories</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">PR Merge Success Rate:</span>
