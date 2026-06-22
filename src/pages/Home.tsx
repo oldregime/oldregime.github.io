@@ -25,6 +25,17 @@ const Home = () => {
 
   const mergedPRs = [
     {
+      title: "refactor(cli): extract duplicated table helper into a shared module",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/225",
+      description:
+        "Refactored the CLI application to remove duplicated table-formatting helper logic. Extracted a single table(rows, columns) helper into a shared module and created a comprehensive unit test suite to verify exact formatting output.",
+      tags: ["JavaScript", "Node.js", "CLI", "Refactoring", "Testing"],
+      date: "Jun 2026",
+      status: "Merged",
+    },
+    {
       title: "[#13698] Update PR Checker to fail workflow and persist comment updates",
       repo: "TEAMMATES/teammates",
       repoUrl: "https://github.com/TEAMMATES/teammates",
@@ -147,7 +158,7 @@ const Home = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Merged Pull Requests:</span>
-                <span className="font-bold text-foreground">6</span>
+                <span className="font-bold text-foreground">7</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Stars:</span>
@@ -155,7 +166,7 @@ const Home = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Contributed To:</span>
-                <span className="font-bold text-foreground">4 repositories</span>
+                <span className="font-bold text-foreground">5 repositories</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">PR Merge Success Rate:</span>
