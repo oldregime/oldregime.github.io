@@ -25,6 +25,28 @@ const Home = () => {
 
   const mergedPRs = [
     {
+      title: "feat(mcp): add get_agent_stats tool to wrap agent stats endpoint",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/236",
+      description:
+        "Designed and implemented the get_agent_stats MCP tool to wrap the agent statistics API endpoint, providing structured, real-time performance and usage metrics for the AI fleet database.",
+      tags: ["TypeScript", "Node.js", "MCP", "API Integration"],
+      date: "Jun 2026",
+      status: "Merged",
+    },
+    {
+      title: "test(backend): add unit tests for authCookie and networkSafety",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/235",
+      description:
+        "Developed a robust test suite covering authentication cookie parsers and network safety validators, ensuring zero-trust request verification and mitigating unauthorized route access vulnerabilities.",
+      tags: ["TypeScript", "Node.js", "Testing", "Security", "Backend"],
+      date: "Jun 2026",
+      status: "Merged",
+    },
+    {
       title: "refactor(cli): extract duplicated table helper into a shared module",
       repo: "solomon2773/nora",
       repoUrl: "https://github.com/solomon2773/nora",
@@ -158,7 +180,7 @@ const Home = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Merged Pull Requests:</span>
-                <span className="font-bold text-foreground">7</span>
+                <span className="font-bold text-foreground">9</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Stars:</span>

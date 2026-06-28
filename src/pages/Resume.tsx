@@ -110,18 +110,21 @@ const Resume = () => {
             <div className="flex justify-between items-start mb-2">
               <div>
                 <h3 className="font-semibold text-lg">
-                  Contributor @ <a href="https://github.com/delvedor/find-my-way" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">delvedor/find-my-way</a>
+                  Contributor @ <a href="https://github.com/solomon2773/nora" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">solomon2773/nora</a>
                 </h3>
-                <p className="text-muted-foreground text-sm">High-performance HTTP Router for Node.js (used by Fastify)</p>
+                <p className="text-muted-foreground text-sm">Autonomous Multi-Agent AI Deployment & Fleet Management Platform</p>
               </div>
-              <span className="text-terminal-yellow">May 2026</span>
+              <span className="text-terminal-yellow">Jun 2026</span>
             </div>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>
-                Authored and merged pull request <a href="https://github.com/delvedor/find-my-way/pull/432" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#432</a>: <code>feat: add onMaxParamLength to support 414 URI Too Long</code>.
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/236" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#236</a>: <code>feat(mcp): add get_agent_stats tool to wrap agent stats endpoint</code>. Designed and implemented the get_agent_stats MCP tool to wrap the agent statistics API endpoint, providing structured, real-time performance and usage metrics.
               </li>
               <li>
-                Engineered parameter-length constraints into the HTTP route traversal logic to block malformed, oversized requests, mitigating potential ReDoS (Regular Expression Denial of Service) vectors.
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/235" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#235</a>: <code>test(backend): add unit tests for authCookie and networkSafety</code>. Developed a robust test suite covering authentication cookie parsers and network safety validators, ensuring zero-trust request verification and mitigating unauthorized route access vulnerabilities.
+              </li>
+              <li>
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/225" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#225</a>: <code>refactor(cli): extract duplicated table helper into a shared module</code>. Extracted a single table(rows, columns) helper into a shared module and created a comprehensive unit test suite to verify exact formatting output.
               </li>
             </ul>
           </div>
@@ -134,14 +137,37 @@ const Resume = () => {
                 </h3>
                 <p className="text-muted-foreground text-sm">Enterprise-grade Peer Evaluation & Feedback Management System</p>
               </div>
+              <span className="text-terminal-yellow">Jun 2026</span>
+            </div>
+            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <li>
+                Authored and merged pull request <a href="https://github.com/TEAMMATES/teammates/pull/14234" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#14234</a>: <code>Update PR Checker to fail workflow and persist comment updates</code>. Improved GitHub Actions PR checker by failing the workflow on lint/build violations, updating existing checker comments instead of posting new ones to reduce notification spam, and adding author verification.
+              </li>
+              <li>
+                Authored and merged pull request <a href="https://github.com/TEAMMATES/teammates/pull/14202" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#14202</a>: <code>test: prevent environment-dependent CAPTCHA test failures</code>. Resolved environment-dependent test failures in the frontend spec suite by resetting the CAPTCHA site key to an empty string during test setup, preventing Angular compilation errors when local developer environments have custom keys configured.
+              </li>
+              <li>
+                Authored and merged pull request <a href="https://github.com/TEAMMATES/teammates/pull/13862" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#13862</a>: <code>Change getDisplayWeight return type from any to string</code>. Strengthened type-safety across evaluation components by refactoring type footprints, eliminating legacy TypeScript <code>any</code> types to reduce compilation and runtime defects.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="flex justify-between items-start mb-2">
+              <div>
+                <h3 className="font-semibold text-lg">
+                  Contributor @ <a href="https://github.com/delvedor/find-my-way" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">delvedor/find-my-way</a>
+                </h3>
+                <p className="text-muted-foreground text-sm">High-performance HTTP Router for Node.js (used by Fastify)</p>
+              </div>
               <span className="text-terminal-yellow">May 2026</span>
             </div>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>
-                Authored and merged pull request <a href="https://github.com/TEAMMATES/teammates/pull/13862" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#13862</a>: <code>Change getDisplayWeight return type from any to string</code>.
+                Authored and merged pull request <a href="https://github.com/delvedor/find-my-way/pull/432" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#432</a>: <code>feat: add onMaxParamLength to support 414 URI Too Long</code>.
               </li>
               <li>
-                Strengthened type-safety across evaluation components by refactoring type footprints, eliminating legacy TypeScript <code>any</code> types to reduce compilation and runtime defects.
+                Engineered parameter-length constraints into the HTTP route traversal logic to block malformed, oversized requests, mitigating potential ReDoS (Regular Expression Denial of Service) vectors.
               </li>
             </ul>
           </div>
