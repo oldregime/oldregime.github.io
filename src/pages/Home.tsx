@@ -25,6 +25,50 @@ const Home = () => {
 
   const mergedPRs = [
     {
+      title: "docs(integrations): link existing per-provider guides from index catalog",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/295",
+      description:
+        "Organized the documentation hub by linking individual provider guides into the central catalog index, improving discoverability and onboarding for new integrations.",
+      tags: ["Documentation", "Markdown", "Integrations"],
+      date: "Jul 2026",
+      status: "Merged",
+    },
+    {
+      title: "test(backend-api): add unit tests for lib/apiTokens.ts",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/294",
+      description:
+        "Expanded API token management unit testing, covering token generation, validation logic, and edge cases to ensure reliable access control across API endpoints.",
+      tags: ["TypeScript", "Node.js", "Testing", "Security"],
+      date: "Jul 2026",
+      status: "Merged",
+    },
+    {
+      title: "feat(cli): add --json flag to nora workspaces list",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/293",
+      description:
+        "Added structured JSON output formatting (`--json` flag) to the `nora workspaces list` CLI command, enabling programmatic scripting and CI automation.",
+      tags: ["TypeScript", "Node.js", "CLI", "JSON"],
+      date: "Jul 2026",
+      status: "Merged",
+    },
+    {
+      title: "test(backend-api): add unit tests for auditSource.ts",
+      repo: "solomon2773/nora",
+      repoUrl: "https://github.com/solomon2773/nora",
+      prUrl: "https://github.com/solomon2773/nora/pull/292",
+      description:
+        "Authored unit tests for the backend audit source tracking layer, verifying accurate event provenance and audit log persistence.",
+      tags: ["TypeScript", "Node.js", "Testing", "Audit Logging"],
+      date: "Jul 2026",
+      status: "Merged",
+    },
+    {
       title: "feat(mcp): add get_agent_stats tool to wrap agent stats endpoint",
       repo: "solomon2773/nora",
       repoUrl: "https://github.com/solomon2773/nora",
@@ -176,11 +220,11 @@ const Home = () => {
             <div className="space-y-3 font-mono text-sm">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Commits:</span>
-                <span className="font-bold text-foreground">420+</span>
+                <span className="font-bold text-foreground">450+</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Merged Pull Requests:</span>
-                <span className="font-bold text-foreground">9</span>
+                <span className="font-bold text-foreground">11</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Total Stars:</span>

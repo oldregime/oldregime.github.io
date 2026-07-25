@@ -114,14 +114,26 @@ const Resume = () => {
                 </h3>
                 <p className="text-muted-foreground text-sm">Autonomous Multi-Agent AI Deployment & Fleet Management Platform</p>
               </div>
-              <span className="text-terminal-yellow">Jun 2026</span>
+              <span className="text-terminal-yellow">Jun – Jul 2026</span>
             </div>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <li>
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/295" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#295</a>: <code>docs(integrations): link existing per-provider guides from index catalog</code>. Organized the documentation hub by linking individual provider guides into the central index catalog.
+              </li>
+              <li>
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/294" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#294</a>: <code>test(backend-api): add unit tests for lib/apiTokens.ts</code>. Expanded API token management unit testing, covering token generation, validation logic, and access control edge cases.
+              </li>
+              <li>
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/293" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#293</a>: <code>feat(cli): add --json flag to nora workspaces list</code>. Implemented structured JSON output formatting for CLI workspace listing commands to support automation.
+              </li>
+              <li>
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/292" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#292</a>: <code>test(backend-api): add unit tests for auditSource.ts</code>. Authored backend audit source tracking unit tests to ensure reliable event provenance.
+              </li>
               <li>
                 Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/236" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#236</a>: <code>feat(mcp): add get_agent_stats tool to wrap agent stats endpoint</code>. Designed and implemented the get_agent_stats MCP tool to wrap the agent statistics API endpoint, providing structured, real-time performance and usage metrics.
               </li>
               <li>
-                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/235" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#235</a>: <code>test(backend): add unit tests for authCookie and networkSafety</code>. Developed a robust test suite covering authentication cookie parsers and network safety validators, ensuring zero-trust request verification and mitigating unauthorized route access vulnerabilities.
+                Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/235" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#235</a>: <code>test(backend): add unit tests for authCookie and networkSafety</code>. Developed a robust test suite covering authentication cookie parsers and network safety validators, ensuring zero-trust request verification.
               </li>
               <li>
                 Authored and merged pull request <a href="https://github.com/solomon2773/nora/pull/225" target="_blank" rel="noopener noreferrer" className="text-terminal-yellow hover:underline">#225</a>: <code>refactor(cli): extract duplicated table helper into a shared module</code>. Extracted a single table(rows, columns) helper into a shared module and created a comprehensive unit test suite to verify exact formatting output.
