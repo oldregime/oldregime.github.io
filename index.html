@@ -99,7 +99,31 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     <div class="cur-circle"></div>
   </div>
   <!-- Noise texture overlay -->
-  <div class="noise-overlay" aria-hidden="true"></div>
+  <!-- High-intent recruiter engagement beacon (Zero tracking pixels) -->
+  <script>
+    (function() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var ref = params.get('ref') || params.get('app_id');
+        if (ref && (ref.indexOf('app_') === 0 || ref.length >= 6)) {
+          // 1. Cloud pub-sub event for autonomous daemon
+          fetch('https://ntfy.sh/divyansh_portfolio_clicks_89624', {
+            method: 'POST',
+            body: ref
+          }).catch(function(){});
+
+          // 2. Direct real-time candidate alert via Telegram Bot
+          var alertText = "🔥 [Portfolio Viewed] Recruiter opened your portfolio!\nApplication Ref: " + ref + "\nSource: " + (document.referrer || 'Direct Email Link') + "\nTime: " + new Date().toLocaleTimeString();
+          var tgUrl = "https://api.telegram.org/bot8991983376:AAE6i9fBNU5eRkpRdkyiWNB3ZvSx3cfDkg0/sendMessage?chat_id=7317972119&text=" + encodeURIComponent(alertText);
+          if (navigator.sendBeacon) {
+            navigator.sendBeacon(tgUrl);
+          } else {
+            fetch(tgUrl, { mode: 'no-cors' }).catch(function(){});
+          }
+        }
+      } catch(e) {}
+    })();
+  </script>
 </body>
 
 </html>
